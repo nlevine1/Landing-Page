@@ -40,7 +40,7 @@ nav {
 
 /* ====== Main Content ====== */
 #photo-container {
-  background-image: url(./images/hiking-gear-checklist.jpeg);
+  background-image: url('../images/hiking-gear-checklist.jpeg');
   background-size: cover;
   height: 700px;
   margin-bottom: 50px;
