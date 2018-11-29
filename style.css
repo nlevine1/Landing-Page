@@ -1,0 +1,222 @@
+/* ======= Body style ======= */
+
+body {
+  background-color: white;
+}
+
+/* ======= Nav style ======== */
+#header {
+  background-color: #003b46;
+  color: white;
+  display: flex;
+}
+
+nav {
+  height: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.left {
+  width: 500px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-head {
+  margin-left: 10px;
+  align-self: center;
+}
+
+.right {
+  flex: 1;
+  width: 100px;
+  text-align: right;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* ====== Main Content ====== */
+#photo-container {
+  background-image: url(./images/hiking-gear-checklist.jpeg);
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  #photo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header-title {
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  color: #d9935a;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.header-body {
+  text-align: center;
+  align-self: center;
+  width: 1000px;
+  margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+  .header-body {
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+  }
+}
+
+#title-div {
+  margin-bottom: 50px;
+}
+
+#title {
+  text-align: center;
+  font-size: 50px;
+  color: #003b46;
+  font-family: 'Poppins', sans-serif;
+}
+.card-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-text {
+  font-family: 'Niramit', sans-serif;
+}
+
+.card {
+  border: none;
+  color: #07575b;
+}
+
+#body-text {
+  color: #66a5ad;
+}
+
+.fas {
+  transition: all 0.2s ease-in-out;
+}
+
+.fas:hover {
+  transform: scale(1.1);
+  color: #d9935a;
+}
+
+/* ======== form styling ======== */
+.form {
+  height: 500px;
+  width: 400px;
+  float: right;
+  margin: 20px;
+  background-color: #07575b;
+  border-radius: 10px;
+  align-self: center;
+  position: relative;
+  right: 50px;
+  border: 2px solid #66a5ad;
+}
+
+@media (max-width: 600px) {
+  .form {
+    position: absolute;
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    position: absolute;
+    bottom: 150px;
+  }
+}
+
+.sign {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 15px;
+  font-family: 'Niramit', sans-serif;
+  color: white;
+}
+
+.button-div {
+  text-align: center;
+}
+
+.s-button {
+  background-color: #d9935a;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.s-button:hover {
+  color: #d9935a;
+  background-color: white;
+  border: 2px solid #d9935a;
+  transform: scale(1.1);
+}
+
+.side {
+  width: 500px;
+  border: 0;
+  height: 1px;
+  background: #d9935a;
+  background-image: linear-gradient(to right, #ccc, #d9935a, #ccc);
+  margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .side {
+    width: 200px;
+  }
+}
+
+.side2 {
+  width: 300px;
+  border: 0;
+  height: 1px;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    350,
+    from(#d9935a),
+    to(#fff)
+  );
+  background-image: linear-gradient(to right, #ccc, #d9935a, #ccc);
+}
