@@ -3,5 +3,23 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "path": "^0.12.7"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "landing-page",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlevine1/Landing-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlevine1/Landing-Page/issues"
+  },
+  "homepage": "https://github.com/nlevine1/Landing-Page#readme",
+  "description": ""
 }
