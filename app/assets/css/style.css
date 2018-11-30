@@ -1,5 +1,4 @@
 /* ======= Body style ======= */
-
 body {
   background-color: white;
 }
@@ -16,6 +15,12 @@ nav {
   font-family: 'Poppins', sans-serif;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
 .left {
   width: 500px;
 }
@@ -23,12 +28,24 @@ nav {
 .logo {
   display: flex;
   flex-direction: row;
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  position: relative;
 }
 
 .logo-head {
   margin-left: 10px;
   align-self: center;
   font-size: 30px;
+}
+
+@keyframes navanime {
+  0% {
+    right: 600px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 
 .right {
@@ -47,11 +64,17 @@ nav {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 #main {
-  margin-top: 60px;
+  margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+  #main {
+    margin-top: 110px;
+  }
 }
 
 .header-title {
@@ -61,11 +84,22 @@ nav {
   color: #d9935a;
   font-weight: bold;
   font-size: 50px;
+  animation-name: header;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@keyframes header {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 @media (max-width: 600px) {
   .header-title {
-    margin-top: -30px;
   }
 }
 
@@ -140,6 +174,18 @@ nav {
   border-radius: 10px;
   border: 2px solid #66a5ad;
   margin-top: 10px;
+  animation-name: forman;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@keyframes forman {
+  0% {
+    right: -800px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -147,6 +193,7 @@ nav {
     margin-bottom: 20px;
   }
 }
+
 .sign {
   text-align: center;
   margin-top: 10px;
