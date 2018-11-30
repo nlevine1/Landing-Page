@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-  height: 100px;
+  height: 60px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -28,6 +28,7 @@ nav {
 .logo-head {
   margin-left: 10px;
   align-self: center;
+  font-size: 30px;
 }
 
 .right {
@@ -49,41 +50,36 @@ nav {
   max-width: 100%;
 }
 
-@media (max-width: 800px) {
-  #photo-container {
-    flex-direction: column;
-    text-align: center;
-  }
+#main {
+  margin-top: 60px;
 }
 
 .header-title {
   text-align: right;
+  margin-top: 70px;
   font-family: 'Poppins', sans-serif;
   color: #d9935a;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 @media (max-width: 600px) {
   .header-title {
-    font-size: 35px;
-    text-align: center;
-    font-weight: bold;
+    margin-top: -30px;
   }
 }
 
-.header-body {
-  text-align: center;
-  align-self: center;
-  width: 1000px;
-  margin-right: 50px;
+.here {
+  color: #07575b;
+  font-weight: bolder;
+  font-size: 80px;
+  font-family: 'Philosopher', sans-serif;
 }
 
 @media (max-width: 600px) {
-  .header-body {
-    width: 400px;
+  .header-title {
     text-align: center;
-    margin: 20px;
+    font-size: 35px;
   }
 }
 
@@ -94,9 +90,16 @@ nav {
 #title {
   text-align: center;
   font-size: 50px;
-  color: #003b46;
+  color: #07575b;
   font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 800px) {
+  #title {
+    font-size: 30px;
+  }
+}
+
 .card-title {
   font-family: 'Poppins', sans-serif;
 }
@@ -124,33 +127,18 @@ nav {
 }
 
 /* ======== form styling ======== */
-.form {
-  height: 500px;
-  width: 400px;
-  float: right;
-  margin: 20px;
+.forms {
   background-color: #07575b;
   border-radius: 10px;
-  align-self: center;
-  position: relative;
-  right: 50px;
   border: 2px solid #66a5ad;
+  margin-top: 10px;
 }
 
 @media (max-width: 600px) {
-  .form {
-    position: absolute;
-    bottom: 150px;
+  .forms {
+    margin-bottom: 20px;
   }
 }
-
-@media (max-width: 400px) {
-  .form {
-    position: absolute;
-    bottom: 150px;
-  }
-}
-
 .sign {
   text-align: center;
   margin-top: 10px;
@@ -171,7 +159,7 @@ nav {
 
 .s-button {
   background-color: #d9935a;
-  width: 300px;
+  width: 230px;
   height: 50px;
   margin-top: 20px;
   border-radius: 10px;
@@ -180,14 +168,14 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   border: 1px solid white;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .s-button:hover {
   color: #d9935a;
   background-color: white;
   border: 2px solid #d9935a;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .side {
@@ -206,7 +194,7 @@ nav {
 }
 
 .side2 {
-  width: 300px;
+  width: 230px;
   border: 0;
   height: 1px;
   background: -webkit-gradient(
