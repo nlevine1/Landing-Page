@@ -21,6 +21,13 @@ nav {
   z-index: 9;
 }
 
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
 .left {
   width: 500px;
 }
@@ -37,6 +44,13 @@ nav {
   margin-left: 10px;
   align-self: center;
   font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .logo-head {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 @keyframes navanime {
@@ -71,7 +85,7 @@ nav {
   margin-top: 80px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #main {
     margin-top: 110px;
   }
@@ -98,15 +112,18 @@ nav {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header-title {
+    margin-top: -20px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .header-title {
     margin-top: -40px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
   }
 }
@@ -118,10 +135,10 @@ nav {
   font-family: 'Philosopher', sans-serif;
 }
 
-@media (max-width: 600px) {
-  .header-title {
+@media (max-width: 900px) {
+  .here {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
   }
 }
 
@@ -262,4 +279,10 @@ nav {
     to(#fff)
   );
   background-image: linear-gradient(to right, #ccc, #d9935a, #ccc);
+}
+
+@media (max-width: 900px) {
+  .side2 {
+    width: 200px;
+  }
 }
